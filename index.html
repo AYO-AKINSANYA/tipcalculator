@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Tip Calculator</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>SPLI<br>TTER</h1>
+        <div class="calculator">
+            <div class="inputs">
+                <label for="bill">Bill</label>
+                <input type="number" class="svgplaceholder" id="bill" placeholder="0" value="142.55">
+                <label>Select Tip %</label>
+                <div class="tip-buttons">
+                    <button class="tip-btn" data-tip="5">5%</button>
+                    <button class="tip-btn" data-tip="10">10%</button>
+                    <button class="tip-btn" data-tip="15">15%</button>
+                    <button class="tip-btn tb" data-tip="25">25%</button>
+                    <button class="tip-btn tb" data-tip="50">50%</button>
+                    <input type="number" id="custom-tip" placeholder="Custom">
+                </div>
+                <label for="people">Number of People</label>
+                <input type="number" class="svg-placeholder" id="people" placeholder="0" value="5">
+            </div>
+            <div class="results">
+                <div class="result">
+                    <p>Tip Amount<br><span class="per">/ person</span></p>
+                    <p class="amount" id="tip-amount">$4.27</p>
+                </div>
+                <div class="result">
+                    <p>Total<br> <span class="per">/ person</span> </p>
+                    <p class="amount" id="total-amount">$32.79</p>
+                </div>
+                <button id="reset">RESET</button>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+
+</html>
